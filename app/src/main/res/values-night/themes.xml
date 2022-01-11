@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Themelooks_users" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Themelooks_users" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!--Font-->
         <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
         <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
@@ -13,7 +13,7 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">#BD0243</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/default_color</item>
         <!-- Customize your theme here. -->
     </style>
 

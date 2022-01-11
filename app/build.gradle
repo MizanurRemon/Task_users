@@ -46,4 +46,6 @@ dependencies {
     //circularimage
     implementation 'com.mikhaellopez:circularimageview:3.0.2'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'nl.bryanderidder:themed-toggle-button-group:1.4.0'
 }

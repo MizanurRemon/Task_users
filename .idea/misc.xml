@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/home_fragment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/login_fragment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/registration_fragment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/view_product_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/drawable/ripple_effect.xml" value="0.2169230769230769" />
+        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/drawable/shape_top.xml" value="0.2203125" />
+        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/card_product.xml" value="0.20416666666666666" />
+        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/home_fragment.xml" value="0.17777777777777778" />
+        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/loader_alert.xml" value="0.20416666666666666" />
+        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/login_fragment.xml" value="0.17777777777777778" />
+        <entry key="..\:/Educational/Apps/Themelooks_users/app/src/main/res/layout/view_product_fragment.xml" value="0.17777777777777778" />
       </map>
     </option>
   </component>

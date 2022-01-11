@@ -11,7 +11,7 @@
         android:id="@+id/progressID"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:indeterminateTint="@color/red"/>
+        android:indeterminateTint="@color/default_color"/>
 
 
 </LinearLayout>
