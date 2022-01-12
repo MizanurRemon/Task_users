@@ -58,6 +58,7 @@ public class View_product_fragment extends Fragment {
 
     private void price_data() {
 
+        // products price API call
         productsApi.getPriceRange(productID, color, size).enqueue(new Callback<Price_range_response>() {
             @Override
             public void onResponse(Call<Price_range_response> call, Response<Price_range_response> response) {
@@ -73,6 +74,7 @@ public class View_product_fragment extends Fragment {
         });
 
         //Toast.makeText(getActivity(), size + " " + color, Toast.LENGTH_SHORT).show();
+        //product price with variant API call
         productsApi.priceResponse(color, size).enqueue(new Callback<Price_response>() {
             @Override
             public void onResponse(Call<Price_response> call, Response<Price_response> response) {
@@ -89,6 +91,7 @@ public class View_product_fragment extends Fragment {
 
     private void main() {
 
+        // product details API call
         productsApi.getProductDetails(productID).enqueue(new Callback<Products_response>() {
             @Override
             public void onResponse(Call<Products_response> call, Response<Products_response> response) {
@@ -112,6 +115,7 @@ public class View_product_fragment extends Fragment {
 
     }
 
+    // string to image convertion
     public Bitmap StringToBitMap(String encodedString) {
         try {
             byte[] encodeByte = Base64.decode(encodedString, Base64.DEFAULT);

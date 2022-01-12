@@ -53,6 +53,7 @@ public class Home_fragment extends Fragment implements Product_adapter.OnItemCli
 
     private void profile_func() {
 
+        //call profile name
         profileViewModel.getData(userID).observe(getViewLifecycleOwner(), new Observer<Profile_response>() {
             @Override
             public void onChanged(Profile_response profile_response) {
@@ -62,6 +63,8 @@ public class Home_fragment extends Fragment implements Product_adapter.OnItemCli
     }
 
     private void main() {
+
+        //call products list API
         productsViewModel.getProduct().observe(getViewLifecycleOwner(), new Observer<List<Products_response>>() {
             @Override
             public void onChanged(List<Products_response> products_responses) {

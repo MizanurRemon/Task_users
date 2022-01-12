@@ -44,12 +44,7 @@ public class Registration_fragment extends Fragment {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().setCustomAnimations(
-                        R.anim.slide_in,  // enter
-                        R.anim.fade_out,  // exit
-                        R.anim.fade_in,   // popEnter
-                        R.anim.slide_out  // popExit
-                ).replace(R.id.frame_container, new Login_fragment()).commit();
+                getActivity().getSupportFragmentManager().popBackStack();
             }
         });
 
@@ -108,13 +103,14 @@ public class Registration_fragment extends Fragment {
     private void validation(String name, String phone, String password) {
 
         loaderDialog.show();
+        // check validation API call, user available or not
         registerViewModel.getValidate(phone).observe(getViewLifecycleOwner(), new Observer<Validation_response>() {
             @Override
             public void onChanged(Validation_response validation_response) {
                 String userID = String.valueOf(validation_response.getCustomerID());
 
                 if (userID.equals("-1")) {
-                    //register
+                    //register API call
                     registerViewModel.getRegister(name, phone, password).observe(getViewLifecycleOwner(), new Observer<Register_response>() {
                         @Override
                         public void onChanged(Register_response register_response) {
